@@ -32,7 +32,6 @@ body {
   width: 100%;
   height: 100vh;
   overflow: scroll;
-  
 }
 
 .footerBox {
@@ -43,7 +42,7 @@ body {
   height: 20vh;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .sideBarBox {
     width: 30%;
     float: left;
