@@ -1,5 +1,26 @@
-body{
-    background-color: rgb(18, 18, 18);
+body {
+  background-color: rgb(18, 18, 18);
 }
 
+.mianBox {
+  background-color: rgb(219, 0, 0);
+  width: 96%;
+  position: fixed;
+  left: 2%;
+}
 
+.headrBox{
+    width: 100%;
+}
+
+.sideBarBox{
+    
+}
+
+.bodyBox{
+
+}
+
+.footerBox{
+
+}
