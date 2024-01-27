@@ -42,7 +42,7 @@ body {
   height: 20vh;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 740px) {
   .sideBarBox {
     width: 30%;
     float: left;
