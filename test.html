@@ -3,61 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
     <style>
       body {
-        background-color: rgb(18, 18, 18);
-      }
-
-      .mianBox {
-        width: 100%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px 13px;
-      }
-
-      .mianBox > .headrBox {
-        background-color: rgb(32, 32, 32);
-        box-shadow: inset -5px -5px 10px 0px rgba(60, 0, 201, 0.5),
-          inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-        width: 100%;
-        height: 20vh;
-      }
-
-      .mianBox > .sideBarBox {
-        background-color: rgb(32, 32, 32);
-        box-shadow: inset -5px -5px 10px 0px rgba(60, 0, 201, 0.5),
-          inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-        width: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height: 100vh;
+        margin: 0;
+        background-color: #1a1a1a;
+        color: #fff;
       }
 
-      .mianBox > .bodyBox {
-        background-color: rgb(32, 32, 32);
-        box-shadow: inset -5px -5px 10px 0px rgba(60, 0, 201, 0.5),
-          inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-        width: 69%;
-        height: 100vh;
-      }
-
-      .mianBox > .footerBox {
-        background-color: rgb(32, 32, 32);
-        box-shadow: inset -5px -5px 10px 0px rgba(60, 0, 201, 0.5),
-          inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+      #audioContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #2d2d2d;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
-        height: 20vh;
+        margin-bottom: 20px;
+      }
+
+      #audioPlayer {
+        width: 100%;
+        padding: 20px;
+        border-bottom: 2px solid #3d3d3d;
+      }
+
+      audio {
+        width: 100%;
+        background-color: #333;
+        border: 2px solid #444;
+        border-radius: 30px;
+        padding: 10px;
+      }
+
+      audio::-webkit-media-controls-panel {
+        background-color: #333;
+        color: #fff;
+        border-radius: 4px;
+      }
+
+      audio::-webkit-media-controls-play-button,
+      audio::-webkit-media-controls-timeline,
+      audio::-webkit-media-controls-current-time-display,
+      audio::-webkit-media-controls-time-remaining-display {
+        color: #fff !important;
+      }
+
+      audio::-webkit-media-controls-play-button::before {
+        content: "▶️";
+      }
+
+      audio::-webkit-media-controls-volume-slider {
+        background-color: #444 !important;
       }
     </style>
+    <title>Styled Audio Player</title>
   </head>
   <body>
-    <div class="mianBox">
-      <div class="headrBox"></div>
-      <div class="sideBarBox"></div>
-      <div class="bodyBox"></div>
-      <div class="footerBox"></div>
+    <div id="audioContainer">
+      <div id="audioPlayer">
+        <audio controls>
+          <source src="music/song0.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
-    <script>
-        
-    </script>
   </body>
 </html>
