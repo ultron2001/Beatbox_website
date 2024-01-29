@@ -145,5 +145,8 @@ footer {
   }
   main {
     padding: 6em 0 6em 0;
+    height: 200vh;
+    overflow-y: scroll;
+    scrollbar-color: white #2a2a2a;
   }
 }
