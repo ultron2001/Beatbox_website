@@ -23,94 +23,86 @@
     <div class="main">
       <aside class="left">Left</aside>
       <main>
+        <input
+          type="text"
+          id="searchInput"
+          oninput="filterSongs()"
+          placeholder="Type to filter"
+        />
         <!-- ********************************************************* -->
-        <div class="audioBox0">
-          <div id="audioContainer">
-            <div id="audioPlayer">
-              <audio controls>
-                <source src="audio/song0.mp3" type="audio/mp3" />
-                Your browser does not support the audio element.
-              </audio>
+
+        <ul id="songList">
+          <li>
+            <div class="audioBox0">
+              <h2>song1</h2>
+              <div id="audioContainer">
+                <div id="audioPlayer">
+                  <audio controls>
+                    <source src="audio/song0.mp3" type="audio/mp3" />
+                    song1
+                  </audio>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- ********************************************************* -->
-        <div class="audioBox0">
-          <div id="audioContainer">
-            <div id="audioPlayer">
-              <audio controls>
-                <source src="music/song0.mp3" type="audio/mp3" />
-                Your browser does not support the audio element.
-              </audio>
+          </li>
+          <!-- ********************************************************* -->
+          <li>
+            <div class="audioBox0">
+              <h2>song2</h2>
+              <div id="audioContainer">
+                <div id="audioPlayer">
+                  <audio controls>
+                    <source src="audio/song0.mp3" type="audio/mp3" />
+                    song2
+                  </audio>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- ********************************************************* -->
-        <div class="audioBox0">
-          <div id="audioContainer">
-            <div id="audioPlayer">
-              <audio controls>
-                <source src="music/song0.mp3" type="audio/mp3" />
-                Your browser does not support the audio element.
-              </audio>
+          </li>
+          <!-- ********************************************************* -->
+          <li>
+            <div class="audioBox0">
+              <h2>song3</h2>
+              <div id="audioContainer">
+                <div id="audioPlayer">
+                  <audio controls>
+                    <source src="audio/song0.mp3" type="audio/mp3" />
+                    song3
+                  </audio>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- ********************************************************* -->
-        <div class="audioBox0">
-          <div id="audioContainer">
-            <div id="audioPlayer">
-              <audio controls>
-                <source src="music/song0.mp3" type="audio/mp3" />
-                Your browser does not support the audio element.
-              </audio>
+          </li>
+          <!-- ********************************************************* -->
+          <li>
+            <div class="audioBox0">
+              <h2>song4</h2>
+              <div id="audioContainer">
+                <div id="audioPlayer">
+                  <audio controls>
+                    <source src="audio/song0.mp3" type="audio/mp3" />
+                    song4
+                  </audio>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- ********************************************************* -->
-        <div class="audioBox0">
-          <div id="audioContainer">
-            <div id="audioPlayer">
-              <audio controls>
-                <source src="music/song0.mp3" type="audio/mp3" />
-                Your browser does not support the audio element.
-              </audio>
+          </li>
+          <!-- ********************************************************* -->
+          <li>
+            <div class="audioBox0">
+              <h2>song5</h2>
+              <div id="audioContainer">
+                <div id="audioPlayer">
+                  <audio controls>
+                    <source src="audio/song0.mp3" type="audio/mp3" />
+                    song5
+                  </audio>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- ********************************************************* -->
-        <div class="audioBox0">
-          <div id="audioContainer">
-            <div id="audioPlayer">
-              <audio controls>
-                <source src="music/song0.mp3" type="audio/mp3" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-        </div>
-        <!-- ********************************************************* -->
-        <div class="audioBox0">
-          <div id="audioContainer">
-            <div id="audioPlayer">
-              <audio controls>
-                <source src="music/song0.mp3" type="audio/mp3" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-        </div>
-        <!-- ********************************************************* -->
-        <div class="audioBox0">
-          <div id="audioContainer">
-            <div id="audioPlayer">
-              <audio controls>
-                <source src="music/song0.mp3" type="audio/mp3" />
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
+
         <!-- ********************************************************* -->
       </main>
       <aside class="right">Right</aside>
@@ -119,10 +111,12 @@
 
     <footer>
       <h2>
-        About the website <br />This site was created in 2024 by Shayan
-        Mohammadi,<br />
-        Hadi Azizi is a beat box maker and song editor. <br />
-        And the portfolio is available on the site
+        <div class="AboutShayan">
+          <a href="shayanMohamadiInfo.html">Shayan Mohammadi</a>
+        </div>
+        <div class="AboutHadi">
+          <a href="Hadi AziziInfo.html">Hadi Azizi</a>
+        </div>
       </h2>
       <button
         id="contactButton"
@@ -137,6 +131,7 @@
         </div>
         <div id="chatBody">
           <p>Welcome to our chat! How can we assist you?</p>
+          <button class="replyButton">reply</button>
         </div>
         <div>
           <input type="text" id="chatInput" placeholder="Type your message" />
@@ -147,14 +142,15 @@
 
     <div class="Offers">
       <input
+        id="OffersInputID"
         class="OffersInput"
         type="text"
-        id="textInput"
         placeholder="Enter your text"
       />
       <button class="OffersButton" type="submit" onclick="submitText()">
         Submit
       </button>
+      <div class="OffersChatBody" id="OffersChatBodyID"></div>
     </div>
     <br />
     <script src="script.js"></script>

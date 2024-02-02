@@ -16,8 +16,20 @@ window.addEventListener('load', adjustFontSize);
 window.addEventListener('resize', adjustFontSize);
 
 function submitText() {
-    var textValue = document.getElementById("textInput").value;
-    console.log("Submitted Text: " + textValue);
+    var OffersInputID = document.getElementById("OffersInputID");
+    var OffersChatBodyID = document.getElementById("OffersChatBodyID");
+
+    var Offersmessage = OffersInputID.value.trim();
+
+    if (Offersmessage !== "") {
+
+        OffersChatBodyID.innerHTML += '<p><strong>NameUser:</strong>' + Offersmessage + '<button class="replyButton">reply</button></p>';
+
+        OffersInputID.value = "";
+
+        OffersChatBodyID.scrollTop = OffersChatBodyID.scrollHeight;
+    }
+
 }
 
 function toggleChat() {
@@ -29,18 +41,37 @@ function sendMessage() {
     var chatInput = document.getElementById("chatInput");
     var chatBody = document.getElementById("chatBody");
 
-    // Get the message from the input field
+
     var message = chatInput.value.trim();
 
-    // Check if the message is not empty
+
     if (message !== "") {
-        // Append the message to the chat body
+
         chatBody.innerHTML += "<p><strong>You:</strong> " + message + "</p>";
 
-        // Clear the input field
+
         chatInput.value = "";
 
-        // Scroll the chat body to the bottom to show the latest message
+
         chatBody.scrollTop = chatBody.scrollHeight;
+    }
+}
+
+function filterSongs() {
+
+    var filter = document.getElementById("searchInput").value.toUpperCase();
+   
+    var songs = document.getElementById("songList");
+
+    var songItems = songs.getElementsByTagName("li");
+
+   
+    for (var i = 0; i < songItems.length; i++) {
+        var songName = songItems[i].textContent || songItems[i].innerText;
+        if (songName.toUpperCase().indexOf(filter) > -1) {
+            songItems[i].style.display = "";
+        } else {
+            songItems[i].style.display = "none";
+        }
     }
 }

@@ -2,7 +2,10 @@
   margin: 5px;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+  color: #4caf50;
+}
 body {
   height: 200vh;
   background: #3f3f3f;
@@ -66,18 +69,32 @@ main {
   overflow-y: scroll;
   scrollbar-color: white #2a2a2a;
 }
+#searchInput {
+  width: calc(100% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.right {
+  background: #2a2a2a;
+  padding: 3em 0 3em 0;
+  flex: 1 1 100px;
+}
 
 .audioBox0 {
   width: 98%;
   height: 300px;
   background-color: #2a2a2a;
   margin-bottom: 12px;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  font-size: 30px;
+  font-size: 20px;
 }
 #audioContainer {
   display: flex;
@@ -129,18 +146,28 @@ audio::-webkit-media-controls-volume-slider {
   background-color: #444 !important;
 }
 
-.right {
-  background: #2a2a2a;
-  padding: 3em 0 3em 0;
-  flex: 1 1 100px;
-}
-
 footer {
   background: #2a2a2a;
-  padding: 3em 0 3em 0;
+  padding: 2em 0 2em 0;
   font-size: 15px;
   margin-bottom: 10px;
   text-align: left;
+}
+
+.AboutShayan {
+  float: left;
+  text-align: center;
+  width: 49.8%;
+  background: #2a2a2a;
+  margin: auto;
+}
+
+.AboutHadi {
+  float: right;
+  text-align: center;
+  width: 49.8%;
+  background: #2a2a2a;
+  margin: auto;
 }
 
 #contactButton {
@@ -211,11 +238,13 @@ footer {
 
 .Offers {
   display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
   width: 100%;
-  max-width: auto;
   margin: auto;
   background: hsl(0, 0%, 16%);
   padding: 0.5em 0 1em 0;
+  max-height: 500px;
 }
 
 .OffersInput {
@@ -229,7 +258,17 @@ footer {
   background-color: #4caf50;
   color: white;
   border: none;
+  width: 60px;
+  text-align: center;
   cursor: pointer;
+}
+
+.OffersChatBody {
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 20px;
+  height: 200vh;
+  text-align: left;
 }
 
 @media all and (max-width: 550px) {
