@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -111,7 +115,47 @@
       </main>
       <aside class="right">Right</aside>
     </div>
-    <footer>Footer</footer>
+    <div class="Contactus"></div>
+
+    <footer>
+      <h2>
+        About the website <br />This site was created in 2024 by Shayan
+        Mohammadi,<br />
+        Hadi Azizi is a beat box maker and song editor. <br />
+        And the portfolio is available on the site
+      </h2>
+      <button
+        id="contactButton"
+        class="fa fa-comments-o"
+        onclick="toggleChat()"
+      ></button>
+
+      <div id="chatContainer">
+        <div id="chatHeader">
+          Chat with Us
+          <span id="closeChat" onclick="toggleChat()">✖</span>
+        </div>
+        <div id="chatBody">
+          <p>Welcome to our chat! How can we assist you?</p>
+        </div>
+        <div>
+          <input type="text" id="chatInput" placeholder="Type your message" />
+          <button id="sendButton" onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </footer>
+
+    <div class="Offers">
+      <input
+        class="OffersInput"
+        type="text"
+        id="textInput"
+        placeholder="Enter your text"
+      />
+      <button class="OffersButton" type="submit" onclick="submitText()">
+        Submit
+      </button>
+    </div>
     <br />
     <script src="script.js"></script>
   </body>
