@@ -156,11 +156,11 @@ footer {
 }
 
 .SiteownersText {
-  margin-left: 0px;
+  margin-left: 9px;
   margin-bottom: 50px;
   padding: 0px;
   text-align: left;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .AboutShayan {
@@ -278,6 +278,10 @@ footer {
   font-size: 20px;
   height: 200vh;
   text-align: left;
+}
+
+.boxcommend {
+  border: 1px solid #4caf50;
 }
 
 .replyButton {

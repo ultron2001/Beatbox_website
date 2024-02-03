@@ -1,14 +1,15 @@
 function adjustFontSize() {
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var fontSizeHeader = document.getElementById("fontSizeHeader");
 
     if (screenWidth <= 600) {
-        document.body.style.fontSize = '6px';
+        fontSizeHeader.style.fontSize = '18px';
     } else if (screenWidth <= 700) {
-        document.body.style.fontSize = '18px';
+        fontSizeHeader.style.fontSize = '30px';
     } else if (screenWidth <= 800) {
-        document.body.style.fontSize = '20px';
+        fontSizeHeader.style.fontSize = '35px';
     } else {
-        document.body.style.fontSize = '40px';
+        fontSizeHeader.style.fontSize = '70px';
     }
 }
 
@@ -48,7 +49,7 @@ function submitText() {
 
     if (Offersmessage !== "") {
 
-        OffersChatBodyID.innerHTML += "<p><strong>NameUser:</strong>" + Offersmessage + "<button class='replyButton'>reply</button></p>";
+        OffersChatBodyID.innerHTML += "<div class='boxcommend'><p><strong>NameUser:</strong>" + Offersmessage + "<button class='replyButton'>reply</button></p></div>";
 
         OffersInputID.value = "";
 
