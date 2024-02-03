@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(38, 38, 38);
+  color: white;
+}
+
+.mainBox {
+  font-style: oblique;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 40vw;
+
+  background-color: rgb(27, 27, 27);
+  box-shadow: 10px 60px 80px 30px #4caf50;
+}
+
+.loginBox {
+  margin: auto;
+  width: 40vw;
+  height: 50vh;
+  background-color: rgb(49, 49, 49);
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+input[type="text"] {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  font-size: 20px;
+  border: 0px none white;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 10%;
+  border-bottom: 2px solid #ffffff;
+  font-style: oblique;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #000000;
+}
+
+input[type="password"] {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  font-size: 20px;
+  border: 0px none white;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 10%;
+  border-bottom: 2px solid #ffffff;
+  font-style: oblique;
+}
+
+input[type="password"]:focus {
+  border-bottom: 2px solid #000000;
+}
+
+.Login_button {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  width: 30%;
+  height: 15%;
+  transition: width 2s, height 4s;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: #4caf50;
+}
