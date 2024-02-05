@@ -68,7 +68,7 @@ header {
 
 main {
   background: #2a2a2a;
-  padding: 0.5em 0 1em 0;
+  padding: 0.5em 2em 0em 0em;
   flex: 5 5 150px;
   height: 200vh;
   overflow-y: scroll;
@@ -160,7 +160,7 @@ footer {
 }
 
 .SiteownersText {
-  margin-left: 9px;
+  width: 99%;
   background: #2a2a2a;
   padding: 0px;
   border: 1px solid white;
@@ -306,6 +306,9 @@ footer {
 }
 
 @media all and (max-width: 550px) {
+  .SiteownersText {
+    width: 96.5%;
+  }
   .main {
     flex-direction: column;
   }
