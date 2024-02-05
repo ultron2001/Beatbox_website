@@ -76,3 +76,29 @@ function filterSongs() {
         }
     }
 }
+
+let isExpanded = true;
+const showAndHideSiteowners = document.getElementById("showAndHideSiteowners");
+const contentContainer = document.getElementById("contentContainer");
+
+
+function Siteowners() {
+    isExpanded = !isExpanded
+    showAndHideSiteowners.style.height = isExpanded ? '60px' : '0px';
+
+
+    if (isExpanded) {
+        contentContainer.innerHTML = `
+          <h2>
+            <div class="AboutShayan">
+              <a href="shayanMohamadiInfo.html">Shayan Mohammadi</a>
+            </div>
+            <div class="AboutHadi">
+              <a href="Hadi AziziInfo.html">Hadi Azizi</a>
+            </div>
+          </h2>`;
+    } else {
+        contentContainer.innerHTML = ''; // Clear content when height is 0px
+    }
+
+}

@@ -20,15 +20,18 @@
         ><span class="charE">E</span><span class="charcolorE">diting</span>
       </h1>
     </header>
+    <div class="filterBox">
+      <input
+        type="text"
+        id="searchInput"
+        oninput="filterSongs()"
+        placeholder="Type to filter"
+      />
+    </div>
     <div class="main">
       <aside class="left">Left</aside>
+
       <main>
-        <input
-          type="text"
-          id="searchInput"
-          oninput="filterSongs()"
-          placeholder="Type to filter"
-        />
         <!-- ********************************************************* -->
 
         <ul id="songList">
@@ -110,15 +113,13 @@
     <div class="Contactus"></div>
 
     <footer>
-      <p class="SiteownersText">Site owners</p>
-      <h2>
-        <div class="AboutShayan">
-          <a href="shayanMohamadiInfo.html">Shayan Mohammadi</a>
-        </div>
-        <div class="AboutHadi">
-          <a href="Hadi AziziInfo.html">Hadi Azizi</a>
-        </div>
-      </h2>
+      <button type="button" class="SiteownersText" onclick="Siteowners()">
+        Site owners ▼
+      </button>
+      <div id="targetElement">
+        <div id="contentContainer"></div>
+      </div>
+      <div id="showAndHideSiteowners"></div>
       <button
         id="contactButton"
         class="fa fa-comments-o"
