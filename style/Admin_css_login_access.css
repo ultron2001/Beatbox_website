@@ -1,0 +1,56 @@
+body {
+  background: #202020;
+  color: #ffffff;
+}
+.admin_user_pass {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  background: #353535;
+  width: 50%;
+  border: 1px solid #ffffff;
+}
+.inputs {
+  width: 97%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.Login_btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 30px;
+  font-size: 20px;
+  background: #353535;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 640px) {
+  .admin_user_pass {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .inputs {
+    width: 95%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+
+  .Login_btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30px;
+    font-size: 20px;
+  }
+}
