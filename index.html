@@ -41,9 +41,6 @@
     <div class="Contactus"></div>
 
     <footer>
-      <button type="button" class="SiteownersText" onclick="Siteowners()">
-        Site owners ▼
-      </button>
       <div id="targetElement">
         <div id="contentContainer"></div>
       </div>
@@ -63,24 +60,31 @@
           <p>Welcome to our chat! How can we assist you?</p>
         </div>
         <div>
-          <input type="text" id="chatInput" placeholder="Type your message" />
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Type your message"
+            autocomplete="off"
+          />
           <button id="sendButton" onclick="sendMessage()">Send</button>
         </div>
       </div>
+      <details class="detailsClass">
+        <summary>Site owners</summary>
+        <p>
+          Hi, <br />
+          this site was built in 2024, <br />
+          and it is managed by two people, <br />
+          the creator of the site
+          <a href="shayanMohamadiInfo.html">shayan Mohamadi</a>
+          <br />
+          and the creator of the content of the site
+          <a href="Hadi AziziInfo.html">Hadi Azizi</a>
+          <br />
+        </p>
+      </details>
     </footer>
 
-    <div class="Offers">
-      <input
-        id="OffersInputID"
-        class="OffersInput"
-        type="text"
-        placeholder="Enter your commend"
-      />
-      <button class="OffersButton" type="submit" onclick="submitText()">
-        Send
-      </button>
-      <div class="OffersChatBody" id="OffersChatBodyID"></div>
-    </div>
     <br />
     <script src="script/script.js"></script>
     <script src="script/admin_js_add_remove_editing.js"></script>
